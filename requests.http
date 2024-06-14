@@ -1,0 +1,35 @@
+GET http://localhost:3000/books HTTP/1.1
+
+
+###
+GET http://localhost:3000/books/1 HTTP/1.1
+
+
+###
+POST http://localhost:3000/books HTTP/1.1
+Content-Type: application/json
+
+
+{
+  "autor": "Juanmix",
+  "isbn": "nosequees",
+  "editorial": "miau",
+  "paginas": "1230"
+}
+
+
+###
+PUT http://localhost:3000/books/1 HTTP/1.1
+Content-Type: application/json
+
+
+{
+  "autor": "Juanmix",
+  "isbn": "nosequees",
+  "editorial": "miau",
+  "paginas": "1230"
+}
+
+
+###
+DELETE http://localhost:3000/books/1 HTTP/1.1
